@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { GoogleLogin } from "react-google-login";
 import { selectSignedIn } from "../../features/userSlice";
+import "../../styles/frontpage.css";
 
 const clientId = process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID;
 
@@ -19,9 +20,19 @@ const Homepage = () => {
     >
       {!isSignedIn ? (
         <div className="signin__message">
-          <h2>Login</h2>
-          <h1>Hello there</h1>
-          <p>Explore tons of awesome Tech blogs</p>
+          <h2>tetst</h2>
+
+          <img
+            src="assets/blogFront.gif"
+            alt="blog"
+            style={{ width: "40%", marginLeft: "auto", marginRight: "auto" }}
+          />
+
+          <h1>Rotten Avocado</h1>
+          <p>
+            The Ultimate source for searching new and awesome blogs on the
+            entire internet
+          </p>
           <GoogleLogin
             clientId={clientId}
             render={(renderProps) => (
@@ -30,7 +41,16 @@ const Homepage = () => {
                 disabled={renderProps.disabled}
                 className="signin__btn"
               >
-                SignIn with Google
+                <img
+                  src="https://media0.giphy.com/media/2epS8zhisYtHDCKrWv/giphy.gif"
+                  style={{
+                    width: "20%",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    dispaly: "block",
+                  }}
+                  alt="google logo"
+                />
               </button>
             )}
             onSuccess={signinResponse}

@@ -1,0 +1,94 @@
+.landing__page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signin__message {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin__message > h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.signin__message > h1 {
+  font-size: 100px;
+  width: 80%;
+  line-height: 1em;
+  margin: 10px auto;
+  margin-top: 0;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: rgb(41, 213, 104);
+  text-decoration: line-through;
+}
+
+.signin__message > p {
+  padding: 15px 0;
+  line-height: 2em;
+  width: 100%;
+  margin: auto;
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+
+.signin__btn {
+  display: block;
+  margin: 15px auto 0px auto;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #34de64;
+  width: 300px;
+  height: 90px;
+  border-radius: 30px;
+  color: #00563f;
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px #34de3a inset;
+  margin-bottom: 15px;
+}
+
+.signin__btn:hover {
+  background-image: linear-gradient(
+    145deg,
+    transparent 0%,
+    #22bc8b 0% 5%,
+    transparent 5% 10%,
+    #22bc79 10% 15%,
+    transparent 15% 20%,
+    #22bc8b 20% 25%,
+    transparent 25% 30%,
+    #22bc79 30% 35%,
+    transparent 35% 40%,
+    #22bc79 40% 45%,
+    transparent 45% 50%,
+    #22bc79 50% 55%,
+    transparent 55% 60%,
+    #22bc79 60% 65%,
+    transparent 65% 70%,
+    #22bc79 70% 75%,
+    transparent 75% 80%,
+    #22bc79 80% 85%,
+    transparent 85% 90%,
+    #22bc79 90% 95%,
+    transparent 95% 100%,
+    #22bc79 100% 110%
+  );
+  animation: background 1s linear infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 0;
+  }
+}
