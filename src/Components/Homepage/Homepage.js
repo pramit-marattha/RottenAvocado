@@ -20,7 +20,18 @@ const Homepage = () => {
     >
       {!isSignedIn ? (
         <div className="signin__message">
-          <h2>tetst</h2>
+          <h2>
+            <span>l</span>
+            <span>e</span>
+            <span>t's</span>
+            <span>‏‏‎ ‎</span>
+            <span>g</span>
+            <span>o</span>
+            <span>o</span>
+            <span>o</span>
+            <span>o</span>
+            <span>o</span>
+          </h2>
 
           <img
             src="assets/blogFront.gif"
@@ -30,7 +41,7 @@ const Homepage = () => {
 
           <h1>Rotten Avocado</h1>
           <p>
-            The Ultimate source for searching new and awesome blogs on the
+            The Ultimate source for searching new and awesome blogs 📝 on the
             entire internet
           </p>
           <GoogleLogin

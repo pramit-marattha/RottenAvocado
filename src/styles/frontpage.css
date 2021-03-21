@@ -8,6 +8,51 @@
   text-align: center;
 }
 
+h2 span {
+  position: relative;
+  top: 20px;
+  margin: 0;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+  font-family: "Titan One", cursive;
+  font-size: 60px;
+  color: rgb(41, 213, 104);
+  text-shadow: 0 1px 0 rgb(127, 194, 132), 0 2px 0 #ccc, 0 3px 0 #ccc,
+    0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h2 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+h2 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+h2 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+h2 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+h2 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+h2 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+h2 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 rgb(130, 206, 152), 0 2px 0 #ccc, 0 3px 0 #ccc,
+      0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc,
+      0 9px 0 #ccc, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .signin__message {
   display: flex;
   flex-direction: column;
@@ -15,6 +60,8 @@
 
 .signin__message > h2 {
   font-size: 50px;
+  color: rgb(41, 213, 104);
+  text-decoration: none;
   margin: 0;
 }
 
@@ -36,7 +83,6 @@
   width: 100%;
   margin: auto;
   font-size: 15px;
-  margin-bottom: 1em;
 }
 
 .signin__btn {
@@ -47,7 +93,7 @@
   border: none;
   background-color: #34de64;
   width: 300px;
-  height: 90px;
+  height: 80px;
   border-radius: 30px;
   color: #00563f;
   background-size: 100% 100%;
@@ -89,6 +135,6 @@
     background-position: 0 0;
   }
   100% {
-    background-position: 100px 0;
+    background-position: 500px 0;
   }
 }
