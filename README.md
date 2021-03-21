@@ -1,3 +1,9 @@
+<h2 align="center">
+ Rotten Avocado
+</h2>
+
+![rotten_avocado](https://user-images.githubusercontent.com/37651620/111909547-d6905a00-8a85-11eb-8f3a-dbebc0d2fba4.gif)
+
 ## Ultimate blog searching application built using react as a frontend, redux (for managing state), and react-google-login for authenticating the user and extracting and displaying all the blog posts from gnews.io API.
 
 ### `yarn start`
