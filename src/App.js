@@ -1,9 +1,10 @@
+import Homepage from "./Components/Homepage";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <>React redux blog site</>
+      <Homepage />
     </div>
   );
 }
