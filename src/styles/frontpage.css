@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
 .landing__page {
   height: 100vh;
   display: flex;
@@ -14,7 +16,7 @@ h2 span {
   margin: 0;
   display: inline-block;
   animation: bounce 0.3s ease infinite alternate;
-  font-family: "Titan One", cursive;
+  font-family: "Share Tech Mono", monospace;
   font-size: 60px;
   color: rgb(41, 213, 104);
   text-shadow: 0 1px 0 rgb(127, 194, 132), 0 2px 0 #ccc, 0 3px 0 #ccc,
