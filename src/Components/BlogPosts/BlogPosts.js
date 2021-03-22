@@ -41,6 +41,9 @@ const BlogPosts = () => {
             </div>
           </a>
         ))}
+        {blogPost?.totalArticles == 0 && (
+          <h1 className="blogSearch__error">NO Blogs Found</h1>
+        )}
       </div>
     </div>
   );
