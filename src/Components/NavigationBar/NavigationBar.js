@@ -14,7 +14,7 @@ import { Avatar } from "@material-ui/core";
 const clientId = process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID;
 
 const NavigationBar = () => {
-  const [searchInputValue, setSearchInputValue] = useState("React");
+  const [searchInputValue, setSearchInputValue] = useState("Avocado");
   const isSignedIn = useSelector(selectSignedIn);
   const userData = useSelector(selectUserData);
   const dispatch = useDispatch();
