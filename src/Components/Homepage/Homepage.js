@@ -1,14 +1,21 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { GoogleLogin } from "react-google-login";
-import { selectSignedIn } from "../../features/userSlice";
-import "../../styles/frontpage.css";
+import {
+  selectSignedIn,
+  setSignedIn,
+  setUserData,
+} from "../../features/userSlice";
+import "./Homepage.css";
 
 const clientId = process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID;
 
 const Homepage = () => {
+  const dispatch = useDispatch();
   const signinResponse = (response) => {
     console.log(response);
+    dispatch(setSignedIn(true));
+    dispatch(setUserData(response.profileObj));
   };
 
   const isSignedIn = useSelector(selectSignedIn);
@@ -21,7 +28,7 @@ const Homepage = () => {
       {!isSignedIn ? (
         <div className="signin__message">
           <h2>
-            <span>l</span>
+            {/* <span>l</span>
             <span>e</span>
             <span>t's</span>
             <span>‏‏‎ ‎</span>
@@ -30,6 +37,22 @@ const Homepage = () => {
             <span>o</span>
             <span>o</span>
             <span>o</span>
+            <span>o</span> */}
+
+            <span></span>
+            <span>R</span>
+            <span>o</span>
+            <span>t</span>
+            <span>t</span>
+            <span>e</span>
+            <span>n</span>
+            <span>‏‏‎🥑‎</span>
+            <span>A</span>
+            <span>v</span>
+            <span>o</span>
+            <span>c</span>
+            <span>a</span>
+            <span>d</span>
             <span>o</span>
           </h2>
 

@@ -13,7 +13,7 @@ const userSlice = createSlice({
       state.isSignedIn = action.payload;
     },
     setUserData: (state, action) => {
-      state.userDate = action.payload;
+      state.userData = action.payload;
     },
     setSearchInput: (state, action) => {
       state.searchInput = action.payload;

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+.navigationbar__component {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  align-items: center;
+  padding: 0px 80px;
+  background: rgb(221, 221, 221);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: #212121;
+  color: #34de64;
+}
+
+.navigationbar__head {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: rgb(41, 213, 104);
+  text-decoration: line-through;
+}
+
+.navigation__avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar__logo {
+  cursor: pointer;
+  border: 3px solid #34de64;
+}
+
+.user_signin_info {
+  font-size: 15px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.signout__btn {
+  display: block;
+  font-family: "Share Tech Mono", monospace;
+  font-style: bold;
+  font-size: 15px;
+  margin-left: 2em;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #34de64;
+  width: 100px;
+  height: 60px;
+  border-radius: 30px;
+  color: #00563f;
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px #34de3a inset;
+  margin-bottom: 1px;
+}
+
+.user__not__found {
+  font-size: 15px;
+}
+
+.nav__search {
+  flex: 1;
+  font-family: "Share Tech Mono", monospace;
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+  margin: 0px 70px;
+  justify-content: space-between;
+  background: rgb(47, 46, 46);
+  border-radius: 15px;
+}
+
+.search__keyword {
+  width: 80%;
+  font-family: "Share Tech Mono", monospace;
+  padding: 5px 30px;
+  padding-left: 30px;
+  background: none;
+  font-family: "Inter";
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+
+.search__btn {
+  width: 20%;
+  font-family: "Share Tech Mono", monospace;
+  border: 2px solid #34de3a;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 12px 0px;
+  border-radius: 5px;
+  transition: 0.1s ease-in-out;
+  background: rgb(52, 98, 74);
+  outline: none;
+}
+
+.signin__nav__btn {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #34de64;
+  width: 100px;
+  height: 60px;
+  border-radius: 30px;
+  color: #00563f;
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px #34de3a inset;
+  margin-bottom: 1px;
+}
+
+.signin__nav__btn:hover {
+  background-image: linear-gradient(
+    145deg,
+    transparent 0%,
+    #22bc8b 0% 5%,
+    transparent 5% 10%,
+    #22bc79 10% 15%,
+    transparent 15% 20%,
+    #22bc8b 20% 25%,
+    transparent 25% 30%,
+    #22bc79 30% 35%,
+    transparent 35% 40%,
+    #22bc79 40% 45%,
+    transparent 45% 50%,
+    #22bc79 50% 55%,
+    transparent 55% 60%,
+    #22bc79 60% 65%,
+    transparent 65% 70%,
+    #22bc79 70% 75%,
+    transparent 75% 80%,
+    #22bc79 80% 85%,
+    transparent 85% 90%,
+    #22bc79 90% 95%,
+    transparent 95% 100%,
+    #22bc79 100% 110%
+  );
+  animation: background 1s linear infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 0;
+  }
+}
