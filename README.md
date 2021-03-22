@@ -12,4 +12,4 @@
 
 ## Ultimate blog searching application built using react as a frontend, redux (for managing state), and react-google-login for authenticating the user and extracting and displaying all the blog posts from gnews.io API.
 
-# It's Live 🎉 Visit here ==> https://rottenavocado.vercel.app/
+## It's Live 🎉 Visit here ==> https://rottenavocado.vercel.app/
