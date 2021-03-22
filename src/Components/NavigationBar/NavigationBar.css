@@ -18,6 +18,7 @@
   letter-spacing: 4px;
   color: rgb(41, 213, 104);
   text-decoration: line-through;
+  cursor: pointer;
 }
 
 .navigation__avatar {
